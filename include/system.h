@@ -18,7 +18,7 @@ public:
     int RunningProcesses();             // TODO: See src/system.cpp
     std::string Kernel();               // TODO: See src/system.cpp
     std::string OperatingSystem();      // TODO: See src/system.cpp
-
+    
     // TODO: Define any necessary private members
 private:
     Processor cpu_ = {};
@@ -26,7 +26,7 @@ private:
     std::string kernel_ = " ";
     std::string os_ = " ";
     void RefreshProcesses();
-
-};
+   
+     };
 
 #endif
