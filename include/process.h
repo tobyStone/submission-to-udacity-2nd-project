@@ -1,5 +1,3 @@
-
-
 #ifndef PROCESS_H
 #define PROCESS_H
 
@@ -10,11 +8,11 @@ It contains relevant attributes as shown below
 */
 class Process {
 public:
-    Process(const int, int cpuUsage_);
+    Process (const int);
     int Pid();                               // TODO: See src/process.cpp
     std::string User();                      // TODO: See src/process.cpp
     std::string Command();                   // TODO: See src/process.cpp
-    int CpuUtilization();                  // TODO: See src/process.cpp
+    float CpuUtilization();                  // TODO: See src/process.cpp
     std::string Ram();                       // TODO: See src/process.cpp
     long int UpTime();                       // TODO: See src/process.cpp
     bool operator<(Process const& a) const;  // TODO: See src/process.cpp
@@ -27,7 +25,7 @@ private:
     int cpuUsage_ = 0;
     std::string ram_ = " ";
     long int uptime_ = 0.0;
-    enum processElements {
+    enum processElements{
         utime_ = 0,
         stime_,
         cutime_,
